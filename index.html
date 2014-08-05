@@ -1,0 +1,88 @@
+<!doctype html>
+<head>
+	<title>Homework #3</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/underscorejs/1.5.2/underscore-min.js"></script>
+	<script src="http://cdn.jsdelivr.net/backbonejs/1.1.0/backbone-min.js"></script>
+	<script src="homework3.js"></script>
+</head>
+
+<body>
+	<div id="fontEdit" data-role="page" data-content-theme="a">
+		<div data-role="header" data-theme="b">
+			<h1>Font Style</h1>
+		</div>
+		<div data-role="content">
+			<p class="preview"></p>
+			<form>
+				<fieldset data-role="fieldcontain">
+					<label for="slider-fill">Size:</label>
+					<select data-mini="true" name="font-size">
+						<option value="12px">12px</option>
+						<option value="16px">16px</option>
+						<option value="20px">20px</option>
+						<option value="24px">24px</option>
+						<option value="28px">28px</option>
+						<option value="32px">32px</option>
+						<option value="36px">36px</option>
+						<option value="40px">40px</option>
+						<option value="48px">48px</option>
+						<option value="56px">56px</option>
+						<option value="64px">64px</option>
+						<option value="72px">72px</option>
+						<option value="80px">80px</option>
+						<option value="96px">96px</option>
+						<option value="112px">112px</option>
+					</select>
+				</fieldset>
+
+				<div data-role="fieldcontain">
+					<label for="slider-fill">Size:</label>
+					<fieldset data-role="controlgroup" data-type="horizontal">
+						<input type="checkbox" name="b" id="b" class="custom" data-mini="true">
+						<label for="b">b</label>
+						<input type="checkbox" name="i" id="i" class="custom" data-mini="true">
+						<label for="i"><em>i</em></label>
+						<input type="checkbox" name="u" id="u" class="custom" data-mini="true">
+						<label for="u">u</label>
+					</fieldset>
+				</div>
+
+				<fieldset data-role="fieldcontain">
+					<label for="red">Red:</label>
+					<input type="range" name="red" id="red"  min="0" max="255" data-highlight="true" data-mini="true">	
+				</fieldset>
+
+				<fieldset data-role="fieldcontain">
+					<label for="green">Green:</label>	
+					<input type="range" name="green" id="green"  min="0" max="255" data-highlight="true" data-mini="true">	
+				</fieldset>
+
+				<fieldset data-role="fieldcontain">
+					<label for="blue">Blue:</label>	
+					<input type="range" name="blue" id="blue" min="0" max="255" data-highlight="true" data-mini="true">
+				</fieldset>
+
+				<fieldset data-role="fieldcontain">
+					<label for="shadow">Shadow:</label>	
+					<input type="checkbox" name="shadow" id="shadow" data-role="flipswitch" data-on-text="Yes" data-off-text="No" data-mini="true">
+				</fieldset>
+
+				<fieldset data-role="fieldcontain">
+					<label for="text">Text:</label>	
+					<input type="text" name="text" id="text"  data-mini="true"/>		
+				</fieldset>
+			</form>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
